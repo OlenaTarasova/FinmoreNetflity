@@ -519,3 +519,4 @@ D:\AutoPlaywright\finmore.netlify\bin\Debug\net9.0\zh-Hans\Microsoft.VisualStudi
 D:\AutoPlaywright\finmore.netlify\bin\Debug\net9.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\AutoPlaywright\finmore.netlify\bin\Debug\net9.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\AutoPlaywright\finmore.netlify\bin\Debug\net9.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+d:\AutoPlaywright\finmore.netlify\obj\Debug\net9.0\finmore.netlify.sourcelink.json

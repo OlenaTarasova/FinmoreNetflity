@@ -64,7 +64,11 @@ namespace FinmoreNetflity.Tests
         {
             await _loginPage!.NavigateToRegisterPageAsync();
             await _loginPage.RegisterAsync(Constants.BasicName, Constants.BasicEmail, Constants.BasicPassword, Constants.BasicConfirmPassword);
-        // await _loginPage.LogInAsync(Constants.BasicEmail, Constants.BasicPassword);
+       // await _loginPage.LogInAsync(Constants.BasicEmail, Constants.BasicPassword);
              }
+
+            
+
+
 }
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("finmore.netlify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+390c0b2d8c08c586d06dfa42ae5103748f47aadc")]
 [assembly: System.Reflection.AssemblyProductAttribute("finmore.netlify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("finmore.netlify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -48,20 +48,22 @@ await _registerTitle.WaitForAsync(new LocatorWaitForOptions { State = WaitForSel
         public async Task RegisterAsync(string BasicName, string BasicEmail, string BasicPassword, string BasicConfirmPassword)
         {
             await _registerNameInput.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible });
-             await _registerNameInput.FillAsync(BasicName);
-            await _registerEmailInput.FillAsync(BasicEmail);
-            await _registerPasswordInput.FillAsync(BasicPassword);
-            await _registerConfirmPasswordInput.FillAsync(BasicConfirmPassword);
-            await _registerSubmitButton.ClickAsync();
+            await  Fill( _registerNameInput, BasicName);
+            await Fill( _registerEmailInput, BasicEmail);
+            await Fill( _registerPasswordInput, BasicPassword);
+            await Fill( _registerConfirmPasswordInput, BasicConfirmPassword);
+            await ClickAsync(_registerSubmitButton, "Register Submit Button");
             await WaitForNetworkIdleAsync();
             Assert.That(await _dashboardTitle.IsVisibleAsync(), Is.True);
         }
-        // }
+        
         // public async Task LogInAsync(string BasicEmail, string BasicPassword)
         // {
+        //     await _emailInput.WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible });
         //     await _emailInput.FillAsync( BasicEmail);
         //     await _passwordInput.FillAsync(BasicPassword);
         //     await _loginSubmitButton.ClickAsync();
         // }
     }
     }
+    
