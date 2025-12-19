@@ -31,10 +31,10 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
 
-      - name: Install Playwright
-        run: |
-          dotnet tool install --global Microsoft.Playwright.CLI
-          playwright install
+      # - name: Install Playwright
+      #   run: |
+      #     dotnet tool install --global Microsoft.Playwright.CLI
+      #     playwright install
  
       - name: Run API tests
         run: dotnet test --configuration Release --no-build --logger "trx"
