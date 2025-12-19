@@ -63,14 +63,14 @@ namespace ApiPositiveTests.Tests
 
         }
         [Test, Order(1)] //Create ID post, id is required
-        public async Task Create_Post_Should_Return_ID()
+        public async Task Update_Post_Should_Return_ID()
 
         {
-            int id = 22924; 
+            _postId = 22924; 
 
             var response = await _api.PostAsync(
 
-                "/wp-json/wp/v2/posts/{id}",
+                $"/wp-json/wp/v2/posts/{_postId}",
 
                 new() { DataObject = new { title = "New Post for ID test"} }
 
@@ -79,7 +79,7 @@ namespace ApiPositiveTests.Tests
            Assert.That(response.Status, Is.EqualTo(200));
 
     var json = JsonDocument.Parse(await response.TextAsync());
-    Assert.That(json.RootElement.GetProperty("id").GetInt32(), Is.EqualTo(id));
+    Assert.That(json.RootElement.GetProperty("id").GetInt32(), Is.EqualTo(_postId));
 
         }   
     
