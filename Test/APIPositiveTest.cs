@@ -353,8 +353,8 @@ namespace ApiPositiveTest.Test
     [TestFixture]
     public class PostsCrudIDTests
     {
-        private IPlaywright _playwright;
-        private IAPIRequestContext _api;
+        private IPlaywright? _playwright;
+        private IAPIRequestContext? _api;
         private int _postId;
  
         private static readonly string BaseUrl =
